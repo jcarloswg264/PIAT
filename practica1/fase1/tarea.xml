@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tarea idTArea="Tarea-0005">
+	<descripcionTarea>Identificar el tipo de plaga existente en una planta para procedecer
+	a su fumigacion
+	</descripcionTarea>
+	<espacioTarea>
+		<volumenEspacio>
+			<centro>
+				<longitud>10</longitud>
+				<latitud>-45</latitud>
+				<altitud>1000</altitud>
+			</centro>
+			<forma> circulo</forma>
+			<altura> 120</altura>
+		</volumenEspacio>
+
+	</espacioTarea>
+</tarea>

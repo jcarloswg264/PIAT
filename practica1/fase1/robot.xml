@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<robot idRobot="12345">
+	<funcionalidad>
+	Una cooperativa agrícola cuyos cultivos están situados en terrenos poco
+			accesibles ha decidido utilizar un conjunto de robots que, de forma
+			coordenada y colaborativa, llevarán a cabo tareas de supervisión del estado
+			de salud de cada una de las plantas de un cultivo
+	</funcionalidad>
+	<sistemaLimpieza>ozono</sistemaLimpieza>
+	<homologaciones> no sé cuales poner</homologaciones>
+	<sensores>
+		<numeroSensores>5</numeroSensores>
+		<sensor idSensor="ox1AV">
+			<patogeno>virus</patogeno>
+			<densidad> 500 baterias/m2</densidad>
+		</sensor>
+		<sensor idSensor="ox1CV">
+			<patogeno>gripe</patogeno>
+			<densidad> 500 baterias/m2</densidad>
+		</sensor>
+	</sensores>	
+	
+	<actuadores>
+		<numeroActuadores>2</numeroActuadores>
+		<actuador idActuador="AC01">
+			<alcanceActuacion>
+				<tipoActuacion> Explicacion</tipoActuacion>
+				<fechasActuacion>1998-05-13 1998-05-15</fechasActuacion>
+			</alcanceActuacion>
+		</actuador>
+		<actuador idActuador="AC02">
+			<alcanceActuacion>
+				<tipoActuacion> Explicacion</tipoActuacion>
+				<fechasActuacion>1998-05-13 1998-05-15</fechasActuacion>
+			</alcanceActuacion>
+		</actuador>
+	</actuadores>
+</robot>

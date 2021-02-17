@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mision idMision="MIS001">
+	<fecha> 2020-02-18</fecha>
+	<idioma> Español </idioma>
+	<descricpcion> Mision: <key>higienizar</key>los quirófanos existentes en el Hospital 
+	Universitario para conseguir eliminar bacterias</descricpcion>
+	<responsables>
+		<responsable>
+		<nombreResponsable>
+			<nombreCompleto> PIAT</nombreCompleto>
+			<acronimo> PT </acronimo>
+		</nombreResponsable>
+		<contacto>
+			<email> piat@hotmail.com</email>
+			<uri> paginaweb.com</uri>
+		</contacto>
+		</responsable>
+	</responsables>
+	
+	<robots>
+		<robot idRobot="12345">
+			<funcionalidad>
+			Una cooperativa agrícola cuyos cultivos están situados en terrenos poco
+				accesibles ha decidido utilizar un conjunto de robots que, de forma
+				coordenada y colaborativa, llevarán a cabo tareas de supervisión del estado
+				de salud de cada una de las plantas de un cultivo
+			</funcionalidad>
+			<sistemaLimpieza>ozono</sistemaLimpieza>
+			<homologaciones> no sé cuales poner</homologaciones>
+			<sensores>
+				<numeroSensores>5</numeroSensores>
+				<sensor idSensor="ox1AV">
+					<patogeno>virus</patogeno>
+					<densidad> 500 baterias/m2</densidad>
+				</sensor>
+				<sensor idSensor="ox1CV">
+					<patogeno>gripe</patogeno>
+					<densidad> 500 baterias/m2</densidad>
+				</sensor>
+			</sensores>	
+	
+			<actuadores>
+				<numeroActuadores>2</numeroActuadores>
+				<actuador idActuador="AC01">
+					<alcanceActuacion>
+						<tipoActuacion> Explicacion</tipoActuacion>
+						<fechasActuacion>1998-05-13 1998-05-15</fechasActuacion>
+					</alcanceActuacion>
+				</actuador>
+				<actuador idActuador="AC02">
+					<alcanceActuacion>
+						<tipoActuacion> Explicacion</tipoActuacion>
+						<fechasActuacion>1998-05-13 1998-05-15</fechasActuacion>
+					</alcanceActuacion>
+				</actuador>
+			</actuadores>
+		</robot>
+		
+		
+		<robot idRobot="54321">
+			<funcionalidad>
+			Una cooperativa agrícola cuyos cultivos están situados en terrenos poco
+				accesibles ha decidido utilizar un conjunto de robots que, de forma
+				coordenada y colaborativa, llevarán a cabo tareas de supervisión del estado
+				de salud de cada una de las plantas de un cultivo
+			</funcionalidad>
+			<sistemaLimpieza>ozono</sistemaLimpieza>
+			<homologaciones> no sé cuales poner</homologaciones>
+			<sensores>
+				<numeroSensores>5</numeroSensores>
+				<sensor idSensor="ox1AV">
+					<patogeno>virus</patogeno>
+					<densidad> 500 baterias/m2</densidad>
+				</sensor>
+				<sensor idSensor="ox1CA">
+					<patogeno>gripe</patogeno>
+					<densidad> 500 baterias/m2</densidad>
+				</sensor>
+			</sensores>	
+	
+			<actuadores>
+				<numeroActuadores>2</numeroActuadores>
+				<actuador idActuador="AC03">
+					<alcanceActuacion>
+						<tipoActuacion> Explicacion</tipoActuacion>
+						<fechasActuacion>1998-05-13 1998-05-15</fechasActuacion>
+					</alcanceActuacion>
+				</actuador>
+				<actuador idActuador="AC04">
+					<alcanceActuacion>
+						<tipoActuacion> Explicacion</tipoActuacion>
+						<fechasActuacion>1998-05-13 1998-05-15</fechasActuacion>
+					</alcanceActuacion>
+				</actuador>
+			</actuadores>
+		</robot>
+		
+		
+	</robots>
+	<tarea idTArea="Tarea-0005">
+		<descripcionTarea>Identificar el tipo de plaga existente en una planta para procedecer
+		a su fumigacion
+		</descripcionTarea>
+		<espacioTarea>
+			<volumenEspacio>
+				<centro>
+					<longitud>10</longitud>
+					<latitud>-45</latitud>
+					<altitud>1000</altitud>
+				</centro>
+				<forma> circulo</forma>
+				<altura> 120</altura>
+			</volumenEspacio>
+	
+		</espacioTarea>
+	</tarea>
+	
+	<tarea idTArea="Tarea-0001">
+		<descripcionTarea>Identificar el tipo de plaga existente en una planta para procedecer
+		a su fumigacion
+		</descripcionTarea>
+		<espacioTarea>
+			<imagen idImagen="IMAG001">
+				<datosImagen>
+					<dimensiones>
+						<ancho>15</ancho>
+						<alto>30</alto>
+					</dimensiones>
+					<descripcion>Descripcion</descripcion>
+				</datosImagen> 
+				<contenido>image/gif</contenido>
+			</imagen>
+		</espacioTarea>
+	</tarea>
+	
+	<tarea idTArea="Tarea-0004">
+		<descripcionTarea>Identificar el tipo de plaga existente en una planta para procedecer
+		a su fumigacion
+		</descripcionTarea>
+		<espacioTarea>
+			<puntosEspacio>
+				<punto>
+					<longitud> 150 </longitud>
+					<latitud> 30 </latitud>
+					<altitud> 624.3</altitud>
+				</punto>
+				<altura>180</altura>
+			</puntosEspacio>
+		</espacioTarea>
+	</tarea>
+	
+	<robotTarea>
+		<tareaRealizada> Tarea-0001 </tareaRealizada>
+		<robotAsignado> 12345</robotAsignado>
+	</robotTarea>	
+</mision>
