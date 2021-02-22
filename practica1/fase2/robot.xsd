@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+		targetNamespace="http://www.example.org/robot" 
+		xmlns:tns="http://www.example.org/robot"
+		elementFormDefault="qualified">
+		
+	
+	<xsd:complexType name="tipoRobot">
+		<xsd:sequence>
+			<xsd:element name="funcionalidad" type="xsd:string"/>
+			<xsd:element name="sistemaLimpieza" type="tns:tipoLimpieza"/>
+			<xsd:element name="homologaciones" type="tns:tipoHomologacionesRes"/>
+			<xsd:element name="sensores" type="tns:tipoSensores"/>
+			<xsd:element name="actuadores" type="tns:tipoActuadores"/>
+		</xsd:sequence>
+		<xsd:attribute name="idRobot" type="xsd:token" use="required"/>
+	</xsd:complexType>
+	<xsd:simpleType name="tipoLimpieza">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="ozono"/>
+			<xsd:enumeration value="vapor"/>
+			<xsd:enumeration value="ultravioleta"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="tipoHomologaciones">
+		<xsd:list itemType="xsd:string"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="tipoHomologacionesRes">
+		<xsd:restriction base="tns:tipoHomologaciones">
+			<xsd:length value="10"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="tipoSensores">
+		<xsd:sequence>
+			<xsd:element name="numeroSensores" type="xsd:int"/>
+			<xsd:element name="sensor" type="tns:tipoSensor"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="tipoSensor">
+		<xsd:sequence>
+			<xsd:element name="patogeno" type="xsd:token"/>
+			<xsd:element name="densidad" type="xsd:string" minOccurs="0"/>
+		</xsd:sequence>
+		<xsd:attribute name="idSensor" type="tns:tipoIdSensor" use="required"/>
+	</xsd:complexType>
+	<xsd:simpleType name="tipoIdSensor">
+		<xsd:restriction base="xsd:token">
+			<xsd:pattern value="[A-Z]{3}[0-9][a-z]"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="tipoActuadores">
+		<xsd:sequence>
+			<xsd:element name="numeroActuadores" type="xsd:int"/>
+			<xsd:element name="actuador" type="tns:tipoActuador" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="tipoActuador">
+		<xsd:sequence>
+			<xsd:element name="alcanceActucion" type="tns:tipoActuacion"/>
+		</xsd:sequence>
+		<xsd:attribute name="idActuador" type="tns:tipoIdActuador" use="required"/>
+	</xsd:complexType>
+	<xsd:simpleType name="tipoActuacion">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="256"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="tipoIdActuador">
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="[A-Z]{2}[0-9]{2}"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

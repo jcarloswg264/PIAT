@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <responsables identificadorFiscal="RobotSA">
-<responsable>
-	<nombreResponsable>
-		<nombreCompleto> PIAT</nombreCompleto>
-		<acronimo> PT </acronimo>
-	</nombreResponsable>
-	<contacto>
-		<email> piat@hotmail.com</email>
-		<uri> paginaweb.com</uri>
-	</contacto>
-</responsable>
+	<responsable>
+		<nombreResponsable>
+			<nombreCompleto> PIAT</nombreCompleto>
+			<acronimo> PT </acronimo>
+		</nombreResponsable>
+		<contacto>
+			<email> piat@hotmail.com</email>
+			<uri> paginaweb.com</uri>
+		</contacto>
+	</responsable>
 </responsables>

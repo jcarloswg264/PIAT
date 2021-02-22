@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <tarea idTArea="Tarea-0001">
-	<descripcionTarea>Identificar el tipo de plaga existente en una planta para procedecer
-	a su fumigacion
+	<descripcionTarea>Identificar el tipo de plaga existente en una planta
+		para procedecer
+		a su fumigacion
 	</descripcionTarea>
 	<espacioTarea>
 		<imagen idImagen="IMAG001">
@@ -12,7 +13,7 @@
 					<alto>30</alto>
 				</dimensiones>
 				<descripcion>Descripcion</descripcion>
-			</datosImagen> 
+			</datosImagen>
 			<contenido>image/gif</contenido>
 		</imagen>
 	</espacioTarea>

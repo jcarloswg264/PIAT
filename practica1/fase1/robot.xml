@@ -2,10 +2,11 @@
 
 <robot idRobot="12345">
 	<funcionalidad>
-	Una cooperativa agrícola cuyos cultivos están situados en terrenos poco
-			accesibles ha decidido utilizar un conjunto de robots que, de forma
-			coordenada y colaborativa, llevarán a cabo tareas de supervisión del estado
-			de salud de cada una de las plantas de un cultivo
+		Una cooperativa agrícola cuyos cultivos están situados en terrenos poco
+		accesibles ha decidido utilizar un conjunto de robots que, de forma
+		coordenada y colaborativa, llevarán a cabo tareas de supervisión del
+		estado
+		de salud de cada una de las plantas de un cultivo
 	</funcionalidad>
 	<sistemaLimpieza>ozono</sistemaLimpieza>
 	<homologaciones> no sé cuales poner</homologaciones>
@@ -19,8 +20,8 @@
 			<patogeno>gripe</patogeno>
 			<densidad> 500 baterias/m2</densidad>
 		</sensor>
-	</sensores>	
-	
+	</sensores>
+
 	<actuadores>
 		<numeroActuadores>2</numeroActuadores>
 		<actuador idActuador="AC01">

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <tarea idTArea="Tarea-0005">
-	<descripcionTarea>Identificar el tipo de plaga existente en una planta para procedecer
-	a su fumigacion
+	<descripcionTarea>Identificar el tipo de plaga existente en una planta
+		para procedecer
+		a su fumigacion
 	</descripcionTarea>
 	<espacioTarea>
 		<volumenEspacio>
